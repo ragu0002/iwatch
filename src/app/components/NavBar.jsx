@@ -2,11 +2,12 @@ import Nav from "./Nav";
 
 const NavBar = () => {
   return (
-    <div>
-      <Nav />
-      <Nav />
-      <Nav />
-      <Nav />
+    <div className="navigation">
+      <Nav text="Mac" />
+      <Nav text="iPhone" />
+      <Nav text="iPad" />
+      <Nav text="iWatch" type="header_button" />
+      <Nav text="Support" />
     </div>
   );
 };

@@ -1,10 +1,11 @@
+import { SiApple } from "react-icons/si";
 import NavBar from "./NavBar";
 import Favs from "./Favs";
 
 const Header = () => {
   return (
     <div className="header">
-      <p>Logo</p>
+      <SiApple size={40} />
       <NavBar />
       <Favs />
     </div>

@@ -6,7 +6,7 @@ import ImageBox from "./ImageBox";
 const ProductBox = () => {
   const [selectedImage, setSelectedImage] = useState("navy");
   return (
-    <div className="grid grid-cols-[1fr_auto] justify-center">
+    <div className="grid grid-cols-[1fr_auto] justify-center gap-20">
       <Image width={500} height={500} img={`/${selectedImage}.png`} />
       <ImageBox setSelectedImage={setSelectedImage} />
       <div className="col-2 row-1 grid content-center justify-items-center gap-0.5">

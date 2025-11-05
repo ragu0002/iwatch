@@ -1,9 +1,9 @@
-/*@import "tailwindcss";
-
+@import "tailwindcss";
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #c8dce5;
+  --text-color: #fff;
 }
+/*
 
 @theme inline {
   --color-background: var(--background);
@@ -19,134 +19,19 @@
   }
 }*/
 
-body {
-  font-family: var(--font-montserrat), sans-serif;
-  display: grid;
-  grid-template-columns: [full-start]1fr [content-start]minmax(0, 1200px) [content-end] 1fr [full-end];
-  grid-template-rows: auto 1fr auto;
-  align-items: start;
-  background-color: #c8dce5;
-  color: #fff;
-  > * {
-    grid-column: content;
-  }
-}
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 20px;
-  > * {
-    display: flex;
-    gap: 10px;
-  }
-  .navigation {
-    > * {
-      padding: 5px 10px;
-    }
-  }
-  .header_button {
-    background-color: #fff;
-    color: #c8dce5;
-    border-radius: 20px;
-  }
-}
-.grid_1-1 {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-  justify-content: space-evenly;
-  > * {
-    display: grid;
-    justify-content: center;
-  }
-  > :first-child {
-    display: grid;
-    justify-content: start;
-    h1 {
-      font-size: 3rem;
-      font-weight: 400;
-      text-transform: capitalize;
-      .fatty {
-        font-weight: 800;
-      }
-    }
-    button {
-      padding: 10px 40px;
-      background-color: #c8dce5;
-      color: #fff;
-      border-radius: 50px;
-      border: solid 3px #fff;
-      justify-self: start;
-      width: auto;
-      font-size: 1.2rem;
-      font-weight: 400;
-    }
-  }
-  > :last-child {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    > * {
-      grid-column: 1 / span 1;
-    }
-    .colors {
-      display: grid;
-      grid-column: 2 / span 1;
-      grid-row: 1;
-      justify-content: space-evenly;
-      align-self: center;
-      gap: 20px;
-      > * {
-        width: 20px;
-        height: 20px;
-        border-radius: 20px;
-      }
-      .navy {
-        background-color: #404354;
-      }
-      .ocean {
-        background-color: rgb(207, 238, 245);
-      }
-      .mint {
-        background-color: #58d7c4;
-      }
-      .active {
-        outline: solid 3px white;
-      }
-    }
-  }
-  .image-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    button {
-      background-color: #c8dce5;
-      border: none;
-      position: relative;
-      > * {
-        position: relative;
-        z-index: 2;
-      }
-      &::after {
-        position: absolute;
-        content: "";
-        bottom: 0;
-        left: 0;
-        width: 120px;
-        height: 70px;
-        border-radius: 10px;
-        z-index: 1;
-      }
-    }
-    :nth-child(1)::after {
-      background-color: #40435478;
-    }
-    :nth-child(2)::after {
-      background-color: rgba(207, 238, 245, 0.468);
-    }
-    :nth-child(3)::after {
-      background-color: #58d7c4a2;
-    }
-  }
+@theme inline {
+  --color-background: var(--background);
+  --color-text: var(--text-color);
+  --color-navy: #404354;
+  --color-ocean: rgb(207, 238, 245);
+  --color-mint: #58d7c4;
+  --border-radius-colors: 20px;
+  --border-radius-button: 50px;
+  --font-weight-large: 800;
+  --font-weight-small: 400;
+  --my-grid-cols: [full-start]1fr [content-start]minmax(0, 1200px) [content-end]
+    1fr [full-end];
+  --my-grid-rows: auto 1fr auto;
+  --content-col: content;
+  --content: "";
 }

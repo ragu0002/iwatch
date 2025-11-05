@@ -4,7 +4,7 @@ import Favs from "./Favs";
 
 const Header = () => {
   return (
-    <div className="header">
+    <div className="mt-1.25 flex items-center justify-between">
       <SiApple size={40} />
       <NavBar />
       <Favs />

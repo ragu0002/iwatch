@@ -33,16 +33,5 @@
     1fr [full-end];
   --my-grid-rows: auto 1fr auto;
   --content-col: content;
-}
-.navy {
-  background-color: #404354;
-}
-.ocean {
-  background-color: rgb(207, 238, 245);
-}
-.mint {
-  background-color: #58d7c4;
-}
-.active {
-  outline: solid 3px white;
+  --content: "";
 }

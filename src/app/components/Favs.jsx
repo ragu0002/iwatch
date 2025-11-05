@@ -3,7 +3,7 @@ import { LuShoppingBag } from "react-icons/lu";
 
 const Favs = () => {
   return (
-    <div className="favs">
+    <div className="flex items-center">
       <CiSearch /> |<LuShoppingBag />
     </div>
   );
